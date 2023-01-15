@@ -1,1 +1,9 @@
-
+spring:
+  data:
+    mongodb:
+      username: cuba
+      password: cuba
+      host: localhost
+      port: 27017
+      database: cuba
+      authentication-database: admin
