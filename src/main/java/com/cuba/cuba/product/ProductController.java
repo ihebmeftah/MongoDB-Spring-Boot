@@ -29,7 +29,7 @@ public class ProductController {
         return ResponseEntity.ok(productServices.findById(productId));
     }
 
-    @DeleteMapping("/{productvoidId}")
+    @DeleteMapping("/{productId}")
     public ResponseEntity<Void > delete( @PathVariable("productId") String productId){
         productServices.delete(productId);
         return ResponseEntity.accepted().build();

@@ -13,7 +13,7 @@ public class CubaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CubaApplication.class, args);
 	}
-@Bean
+//@Bean
 	public CommandLineRunner commandLineRunner(ProductRepo productRepo){
 		return args ->  {
 			var product = Product.builder()
