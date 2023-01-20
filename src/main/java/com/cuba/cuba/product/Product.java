@@ -1,5 +1,6 @@
 package com.cuba.cuba.product;
 
+import com.cuba.cuba.category.Category;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,5 +19,6 @@ public class Product {
     private String name;
     private String description;
     private List<String> tags;
+    private Category category;
 
 }
