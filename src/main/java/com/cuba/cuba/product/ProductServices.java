@@ -8,19 +8,19 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductServices {
     private final ProductRepo productRepo;
-    public String insertOne(Product product){
-        return  null ;
+    public String save(Product product){
+        return  productRepo.save(product).getId() ;
     }
 
-    public Product findbyId(String id){
-        return null;
+    public Product findById(String id){
+        return productRepo.findById(id).orElse(null);
     }
 
     public List<Product> findAll(String id){
-        return null;
+        return productRepo.findAll();
     }
 
-    public  void delete (){
-
+    public  void delete (String id){
+    productRepo.deleteById(id);
     }
 }
