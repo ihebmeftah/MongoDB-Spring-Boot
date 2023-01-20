@@ -1,8 +1,13 @@
 package com.cuba.cuba.product;
 
-import java.util.List;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+@Service
+@RequiredArgsConstructor
 public class ProductServices {
+    private final ProductRepo productRepo;
     public String insertOne(Product product){
         return  null ;
     }
